@@ -1,0 +1,39 @@
+{
+  "name": "my-video",
+  "version": "1.0.0",
+  "description": "My Remotion video",
+  "scripts": {
+    "start": "remotion preview",
+    "build": "remotion render Tiktok out/video1.mp4",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx"
+  },
+  "repository": {},
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@google-cloud/storage": "^6.11.0",
+    "@remotion/cli": "3.3.102",
+    "@remotion/noise": "3.3.102",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.1",
+    "get-audio-duration": "^4.0.0",
+    "https": "^1.0.0",
+    "jotai": "^2.2.0",
+    "path": "^0.12.7",
+    "querystring": "^0.2.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "3.3.102",
+    "remotion-transition-series": "^0.0.10",
+    "request": "^2.88.2",
+    "stream": "^0.0.2",
+    "url": "^0.11.1"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config": "3.3.102",
+    "eslint": "^8.30.0",
+    "prettier": "^2.8.1"
+  },
+  "packageManager": "npm@9.5.0"
+}

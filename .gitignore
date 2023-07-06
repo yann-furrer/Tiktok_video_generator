@@ -8,3 +8,6 @@
 /script/test.js
 .DS_Store
 /script/__pycache__/
+/video/my-video/node_modules
+
+/video/my-video/.vscode
