@@ -3,6 +3,8 @@
 /script/.env
 .env
 /midjourney/
+/script/bimg.js/
+/script/dalle.js
 
 
 /script/test.js
