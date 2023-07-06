@@ -1,0 +1,35 @@
+{
+  "name": "script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^6.11.0",
+    "async": "^3.2.4",
+    "axios": "^1.4.0",
+    "dotenv": "^16.1.4",
+    "f": "^1.4.0",
+    "file-system": "^2.2.2",
+    "fs": "^0.0.1-security",
+    "get-audio-duration": "^4.0.0",
+    "i": "^0.3.7",
+    "json": "^11.0.0",
+    "midjourney": "^3.1.90",
+    "node-fetch": "^3.3.1",
+    "npm": "^9.6.7",
+    "openai": "^3.2.1",
+    "path": "^0.12.7",
+    "perf_hooks": "^0.0.1",
+    "querystring": "^0.2.1",
+    "readline": "^1.3.0",
+    "stack-trace": "^1.0.0-pre2",
+    "uuid": "^9.0.0"
+  }
+}

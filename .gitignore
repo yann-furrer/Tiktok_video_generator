@@ -1,0 +1,10 @@
+/iamge/
+/script/node_modules/
+/script/.env
+.env
+/midjourney/
+
+
+/script/test.js
+.DS_Store
+/script/__pycache__/
