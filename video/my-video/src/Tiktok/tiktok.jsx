@@ -9,15 +9,14 @@ export const MyComp: React.FC = (props) => {
           
     <Sequence  from={0 } durationInFrames={10}>
      
-      <AbsoluteFill>
       <Img src={data[0]["image"][1]} />
-      </AbsoluteFill>
+
     
       </Sequence>
       <Sequence from={50}  durationInFrames={10}>
-      <AbsoluteFill>
+   
       <Img src={data[0]["image"][2]} />
-      </AbsoluteFill>
+     
 
   
   </Sequence>

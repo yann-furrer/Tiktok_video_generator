@@ -3,6 +3,7 @@ import os
 import json 
 client = storage.Client()
 import re
+from pathlib import Path
 BUCKET_NAME = 'tiktok-bucket'
 bucket = client.get_bucket(BUCKET_NAME)
 
@@ -44,6 +45,6 @@ file_data[0]["voice"] = sorted_alphanumeric(file_data[0]["voice"])
 file_data[0]["subtitle"] = sorted_alphanumeric(file_data[0]["subtitle"])
 
 print(file_data)
-with open("/Users/yannfurrer/Desktop/video/video/my-video/public/bucket.json", "w") as outfile:
+with open(str(Path(__file__).parents[1])+"/video/my-video/public/bucket.json", "w") as outfile:
     json.dump(file_data, outfile)
-ok =' /Users/yannfurrer/Desktop/video/video/my-video/public/bucket.json'
+ok =os.getcwd()+'/video/my-video/public/bucket.json'

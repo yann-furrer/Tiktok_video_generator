@@ -78,6 +78,7 @@ export const Voice = (props) => {
 };
 
 export const Part = ({duration_voice_tab, i}) => {
+	console.log("i= ", i)
 	const frame = useCurrentFrame();
 	const {fps, durationInFrames} = useVideoConfig();
 	const margin = 1 + (4 / (durationInFrames / 2)) * (frame / 2);
@@ -133,7 +134,9 @@ export const Part = ({duration_voice_tab, i}) => {
 			<Series.Sequence
 				durationInFrames={parseInt(duration_voice_tab[i] * 30) / 2 + 4}
 			>
+				
 				<Img style={stylesleft[style_array[i]]} src={data[0]['image'][i]} />
+				
 			</Series.Sequence>
 
 			<Series.Sequence
@@ -151,7 +154,7 @@ export const PartSequence = ({duration_voice_tab}) => {
 			{duration_voice_tab.length > 0 &&
 				((rows, i, len) => {
 					//console.log(data[0]['voice']);
-					for (var i = 0; i < duration_voice_tab.length; i++) {
+					for (var i = 0; i < duration_voice_tab.length; i+=2) {
 							//console.log(duration_voice_tab.length)
 						//console.log(data[0]['voice'][i])
 //							console.log(duration_voice_tab[i])
@@ -162,7 +165,7 @@ export const PartSequence = ({duration_voice_tab}) => {
 								durationInFrames={parseInt(duration_voice_tab[i] * 30)}
 							>
 								<Part i={i} duration_voice_tab={duration_voice_tab} />
-								<Voice voice={i} />
+								<Voice voice={Math.floor(i / 2)} />
 							</Series.Sequence>
 						);
 					}

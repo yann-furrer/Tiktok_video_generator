@@ -31,7 +31,7 @@ def generate_voice(text, count):
   }
 
   response = requests.post(url, json=data, headers=headers)
-  with open(os.getcwd()+'/output.'+str(count)+'mp3', 'wb') as f:
+  with open(os.getcwd()+'/output'+str(count)+'.mp3', 'wb') as f:
       for chunk in response.iter_content(chunk_size=CHUNK_SIZE):
           if chunk:
               f.write(chunk)
