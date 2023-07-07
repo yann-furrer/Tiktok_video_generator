@@ -5,3 +5,4 @@
 import {Config} from 'remotion';
 
 Config.setImageFormat('jpeg');
+Config.setMaxTimelineTracks(17)

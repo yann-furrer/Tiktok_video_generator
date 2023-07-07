@@ -153,8 +153,10 @@ export const PartSequence = ({duration_voice_tab}) => {
 		<Series>
 			{duration_voice_tab.length > 0 &&
 				((rows, i, len) => {
-					//console.log(data[0]['voice']);
-					for (var i = 0; i < duration_voice_tab.length; i+=2) {
+					for (var i = 0; i < 12 ; i+=2) {
+						console.log("duration_voice_tab = "+duration_voice_tab.length)
+						console.log("duration_voic = "+Math.floor(i/2))
+						//console.log(data[0]['voice']);
 							//console.log(duration_voice_tab.length)
 						//console.log(data[0]['voice'][i])
 //							console.log(duration_voice_tab[i])
@@ -162,7 +164,7 @@ export const PartSequence = ({duration_voice_tab}) => {
 
 						rows.push(
 							<Series.Sequence
-								durationInFrames={parseInt(duration_voice_tab[i] * 30)}
+								durationInFrames={parseInt(duration_voice_tab[Math.floor(i/2)] * 30)}
 							>
 								<Part i={i} duration_voice_tab={duration_voice_tab} />
 								<Voice voice={Math.floor(i / 2)} />

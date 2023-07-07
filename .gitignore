@@ -16,6 +16,7 @@
 /script/test.js
 /script/config.py
 .DS_Store
+/script/sheet.js
 /script/__pycache__/
 /video/my-video/node_modules
 
