@@ -13,6 +13,10 @@ jsonFile = open("./temp/subtitle/data.json", "w")
 jsonFile.write(jsonString)
 jsonFile.close()
 
+
+
+
+
 load_dotenv()
 # Load your API key from an environment variable or secret management service
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")

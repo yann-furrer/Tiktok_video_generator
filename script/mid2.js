@@ -127,6 +127,7 @@ prompt,
 			
 			resolve();
 		}, delay_in_second * 1000);
+		
 		//process.exit(0);
 	});
 	}
@@ -152,12 +153,12 @@ async function executerFonctions(result_tab, counter) {
 		prompt_json[0]["splitted_text"][counter + 1],
 		process.env.CHANNEL_ID_2,
 		result_tab[counter+1],
-		1
+		3
 	), GenerateMidjourneyPicutre(
 		prompt_json[0]["splitted_text"][counter + 2],
 		process.env.CHANNEL_ID_3,
 		result_tab[counter + 2],
-		4
+		6
 	)];
   
 	// Attente de la fin de toutes les exécutions
